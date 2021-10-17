@@ -16,6 +16,7 @@ public class Main {
         main.useCompletableFuture();
         main.useBlockingQueue();
         main.useReentrantLock();
+        main.useJoin();
     }
 
     /**
@@ -141,5 +142,19 @@ public class Main {
             lock.unlock();
         }
 
+    }
+
+    private void useJoin() throws InterruptedException {
+        final String[] s = new String[1];
+        Thread thread = new Thread(() -> {
+            try {
+                s[0] = biz("useJoin");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        thread.start();
+        thread.join();
+        System.out.println(s[0]);
     }
 }
