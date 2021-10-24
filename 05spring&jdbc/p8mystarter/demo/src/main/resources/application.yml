@@ -1,0 +1,16 @@
+spring:
+  school:
+    enabled: true
+    schoolName: MySchool
+    klass1:
+      students:
+        - id: 11
+          name: c1_student1
+        - id: 12
+          name: c1_student2
+    klass2:
+      students:
+        - id: 21
+          name: c2_student1
+        - id: 22
+          name: c2_student2

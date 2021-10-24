@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "spring.school.schoolName",
+      "type": "java.lang.String",
+      "description": "学校名称",
+      "defaultValue": "mySchool"
+    }
+  ]
+}
