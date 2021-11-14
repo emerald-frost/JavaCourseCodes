@@ -1,0 +1,20 @@
+server:
+  port: 4600
+  servlet:
+    context-path: /tcc-demo-order
+
+spring:
+  datasource:
+    driver-class-name:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3316/demo_ds?useUnicode=true&characterEncoding=utf8
+    username: root
+    password:
+  application:
+    name: tcc-demo-order
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    prefer-ip-address: true
