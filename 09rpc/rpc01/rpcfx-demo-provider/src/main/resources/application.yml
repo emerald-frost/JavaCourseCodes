@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+  profiles:
+    active: true
+
+rpcfx:
+  provider:
+    enabled: true
+    service-scan-package: io.kimmking.rpcfx
