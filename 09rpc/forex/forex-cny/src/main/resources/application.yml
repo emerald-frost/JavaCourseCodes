@@ -1,0 +1,33 @@
+dubbo:
+  application:
+    name: forex-cny
+  registry:
+    address: zookeeper://localhost:2181?client=curator
+  scan:
+    base-packages: com.emeraldfrost.forexcny.service.impl
+  protocol:
+    port: 20881
+  consumer:
+    check: false
+
+dynamic-ds:
+  datasource:
+    A:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/forex_a?serverTimezone=PRC&useSSL=false
+      username: root
+      password:
+    B:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/forex_b?serverTimezone=PRC&useSSL=false
+      username: root
+      password:
+
+server:
+  port: 8081
+
+hmily.support.rpc.annotation: true
+
+logging:
+  level:
+    root: info

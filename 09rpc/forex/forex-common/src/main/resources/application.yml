@@ -1,0 +1,18 @@
+dubbo:
+  application:
+    name: forex-common
+  registry:
+    address: zookeeper://localhost:2181?client=curator
+  scan:
+    base-packages: com.emeraldfrost.forexcommon.service.impl
+  protocol:
+    port: 0
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/forex_common?serverTimezone=PRC&useSSL=false
+    username: root
+    password:
+
+server:
+  port: 0

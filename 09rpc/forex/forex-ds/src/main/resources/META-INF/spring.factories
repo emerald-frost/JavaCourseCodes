@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.emeraldfrost.forexds.config.DynamicDataSourceConfig,\
+  com.emeraldfrost.forexds.config.DynamicDataSourceAspect
