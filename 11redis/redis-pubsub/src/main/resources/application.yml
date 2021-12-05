@@ -1,0 +1,3 @@
+spring:
+  redis:
+    host: fe80::1:1
