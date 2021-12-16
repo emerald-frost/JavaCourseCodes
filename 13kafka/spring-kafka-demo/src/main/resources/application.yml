@@ -1,0 +1,8 @@
+spring:
+  kafka:
+    bootstrap-servers: 192.168.2.136:9092,192.168.2.137:9092,192.168.2.138:9092
+    producer:
+      retries: 1
+    consumer:
+      enable-auto-commit: true
+      group-id: demo
